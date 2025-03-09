@@ -1,0 +1,109 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Quiz About Racism</title>
+            <link rel="stylesheet" href="AA3CSS.css" />
+        </head>
+        <body>
+            <h1>Quiz About Racism</h1>
+            <p id="line"><hr></p>
+            <p id="pad1">Question number 1:<br>Is Discrimination still present in this generation? And why?<br>&nbsp&nbsp&nbspA. No, since the government has fixed this problem already.<br>&nbsp&nbsp&nbspB. No, since
+            every single person accepts each other.<br>&nbsp&nbsp&nbspC. Yes, because of racial differences and discrimination between each race.<br>&nbsp&nbsp&nbspD. Yes, because people are stupid</p>
+            <input type="text" id="n1" placeholder = "Answer">
+            <button onclick="q1()" id="but1">Submit Answer</button>
+            <p id="cout">Your answer is:</p>
+
+            <p>Question number 2:<br>What are one of the causes of how racism was created?<br>&nbsp&nbsp&nbspA. The Ideology of Natural Selection<br>&nbsp&nbsp&nbspB. The Differences in Religion
+            <br>&nbsp&nbsp&nbspC. The Kindness between People<br>&nbsp&nbsp&nbspD. Social Media and Video Games</p>
+            <input type="text" id="n2" placeholder = "Answer">
+            <button onclick="q2()" id="but2">Submit Answer</button>
+            <p id="cout2">Your answer is:</p>
+
+            <p>Question number 3:<br>What are one of the effects of racism in modern society?<br>&nbsp&nbsp&nbspA. Peace<br>&nbsp&nbsp&nbspB. Violence
+            <br>&nbsp&nbsp&nbspC. Joy<br>&nbsp&nbsp&nbspD. Love</p>
+            <input type="text" id="n3" placeholder = "Answer">
+            <button onclick="q3()" id="but3">Submit Answer</button>
+            <p id="cout3">Your answer is:</p>
+
+            <p>Question number 4:<br>What are one of the ways racism spread?<br>&nbsp&nbsp&nbspA. Diseases<br>&nbsp&nbsp&nbspB. Insects
+            <br>&nbsp&nbsp&nbspC. Social Media<br>&nbsp&nbsp&nbspD. Plants</p>
+            <input type="text" id="n5" placeholder = "Answer">
+            <button onclick="q5()" id="but5">Submit Answer</button>
+            <p id="cout5">Your answer is:</p>
+
+            <p>Question number 5:<br>Why do we need to promote the stopping of racism?<br>&nbsp&nbsp&nbspA. To promote loving.<br>&nbsp&nbsp&nbspB. To promote Islam
+            <br>&nbsp&nbsp&nbspC. To promote hating and violence<br>&nbsp&nbsp&nbspD. To promote a healthy diet.</p>
+            <input type="text" id="n4" placeholder = "Answer">
+            <button onclick="q4()" id="but4">Submit Answer</button>
+            <p id="cout4">Your answer is:</p>
+
+            <script>
+                function q1() {
+                    var ans = document.getElementById("n1").value;
+                    document.getElementById("cout").innerHTML = qfunc1(ans);
+                }
+                function qfunc1(x) {
+                    if (x == "C") {
+                        return "Correct!";
+                    }
+                    else {
+                        return "Wrong.";
+                    }
+                    return x;
+                }
+                function q2() {
+                    var ans = document.getElementById("n2").value;
+                    document.getElementById("cout2").innerHTML = qfunc2(ans);
+                }
+                function qfunc2(x) {
+                    if (x == "A") {
+                        return "Correct!";
+                    }
+                    else {
+                        return "Wrong.";
+                    }
+                    return x;
+                }
+                function q3() {
+                    var ans = document.getElementById("n3").value;
+                    document.getElementById("cout3").innerHTML = qfunc3(ans);
+                }
+                function qfunc3(x) {
+                    if (x == "B") {
+                        return "Correct!";
+                    }
+                    else {
+                        return "Wrong.";
+                    }
+                    return x;
+                }
+                function q5() {
+                    var ans = document.getElementById("n5").value;
+                    document.getElementById("cout5").innerHTML = qfunc5(ans);
+                }
+                function qfunc5(x) {
+                    if (x == "C") {
+                        return "Correct!";
+                    }
+                    else {
+                        return "Wrong.";
+                    }
+                    return x;
+                }
+                function q4() {
+                    var ans = document.getElementById("n4").value;
+                    document.getElementById("cout4").innerHTML = qfunc4(ans);
+                }
+                function qfunc4(x) {
+                    if (x == "A") {
+                        return "Correct!";
+                    }
+                    else {
+                        return "Wrong.";
+                    }
+                    return x;
+                }
+
+            </script>
+        </body>
+    </html>
